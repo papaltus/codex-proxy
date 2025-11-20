@@ -42,6 +42,10 @@ app.all("*", async (req, res) => {
   }
 });
 
+app.get("/debug-path", (req, res) => {
+  res.send("Using WORKER_URL = " + WORKER_URL);
+});
+
 app.listen(8080, () => {
   console.log("Proxy listening on 8080");
 });
