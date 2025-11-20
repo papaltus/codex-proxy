@@ -1,7 +1,7 @@
 import express from "express";
 import https from "https";
 
-const WORKER_URL = "https://cdx.belogolovsky.net";  // <-- твой Cloudflare Worker endpoint
+const WORKER_URL = "https://codex-proxy.1964340.workers.dev";
 
 const app = express();
 
