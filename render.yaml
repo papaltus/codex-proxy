@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: codex-proxy
+    env: node
+    plan: free
+    branch: main
+    startCommand: "node index.js"
+    buildCommand: "npm install"
+    autoDeploy: true
+    envVars:
+      NODE_ENV: production
